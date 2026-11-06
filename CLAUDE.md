@@ -11,6 +11,8 @@
 - MacBook Air, Apple M4, 10 фізичних / 10 логічних ядер (без SMT), 16 ГБ, macOS.
 - Системний Python 3.9.6. Brew немає, sudo не використовуємо.
 - Для Numba (потрібен Python 3.10-3.14): uv + Python 3.12, venv у корені репи `.venv/` (в .gitignore), там numpy і numba.
+  uv встановлено в `~/.local/bin` (додавати в PATH: `export PATH="$HOME/.local/bin:$PATH"`). Версії: Python 3.12.16, numpy 2.5.4, numba 0.68.1.
+  Створення: `uv venv --python 3.12 .venv && uv pip install --python .venv/bin/python numpy numba`.
   Усі скрипти практики 06 і далі запускати з venv: `.venv/bin/python <скрипт>`.
 
 ## Головна задача курсу
